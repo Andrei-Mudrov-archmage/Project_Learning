@@ -18,7 +18,6 @@ Commands:
 int main()
 {
 	Database database;
-	//database.OpenDataBase();
 		try
 		{
 			while (true)
@@ -29,7 +28,6 @@ int main()
 		catch (exception&)
 		{
 			cout<<" \n" << "ERROR: Please restart the programm." << endl;
-			//database.SaveDataBase();
 		}
 		system("pause");
     return 0;

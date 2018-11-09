@@ -246,57 +246,6 @@ public:
 			FindEvent(item.first);
 		}
 	}
-	/*void SaveDataBase()
-	{
-	ofstream  Savefile;
-	Savefile.open("Save.txt");
-	for (auto item : database)
-	{
-	Savefile << item.first << "-";
-	for (auto item_1 : item.second)
-	{
-	Savefile << item_1 << "-";
-	}
-	Savefile << "/";
-	}
-	Savefile.close();
-
-	}
-	void OpenDataBase()
-	{
-
-	ifstream Openfile;
-	Openfile.open("Save.txt");
-	system("pause");
-	cout << test << endl;
-	if (Openfile)
-	{
-	system("pause");
-	Date date{};
-	set <string> s;
-	system("pause");
-	while (Openfile.eof() == false)
-	{
-	if (Openfile.peek() != '9' || Openfile.peek() != '8' || Openfile.peek() != '7' || Openfile.peek() != '6' || Openfile.peek() != 5 || Openfile.peek() != 4 || Openfile.peek() != 3 || Openfile.peek() != 2 || Openfile.peek() != 1 || Openfile.peek() != 0 )
-	{
-	break;
-	}
-	Openfile >> date;
-	Openfile.ignore(1);
-	cout << date << endl;
-	while (Openfile.peek() != '/')
-	{
-	string temp;
-	Openfile >> temp;
-	Openfile.ignore(1);
-	s.insert(temp);
-	}
-	database[date] = s;
-	}
-	system("pause");
-	}
-
-	}*/
 private:
 	map<Date, set<string>> database;
 };
